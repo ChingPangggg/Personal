@@ -109,7 +109,10 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
+![Home](https://github.com/cp546/Personal/blob/master/imagess/20171222_172131.jpg?raw=true)
+![Home](/Imagess/20171222_172131.jpg)
+<img src="https://github.com/cp546/Personal/blob/master/imagess/20171222_172131.jpg?raw=true" height=200 width=300>
+
 
 
 
@@ -122,7 +125,7 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
-<!--- Fill you answer here. --->
+[Biomedical Engineering is the study of engineering to improve human health](https://www.bme.cornell.edu/)
 
 ## Tables
 Tables in Markdown are slightly harder, but there's an automatic function that allows to you make one easily. When working in a `.md` file, all you have to do is type `table` and hit enter. It will initialize a 2 by 2 table, but you can easily increase the width by going to the last column and hitting `Tab` or it's height by clicking in any cell and hitting `Enter`. Notice in the example how the text below the header is justified left, center, and right. This is due to the line below the header. A line with a colon on the far left of the dashes only indicates left justified, colons on both sides of the dashes indicates centered, and a colon on the far right of the dashes indicates right justified.
@@ -152,7 +155,11 @@ When making tables, it's not important that the lines match up. For example, the
 
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
-<!--- Fill you answer here. --->
+| Animals  | Foods    | Books | Places on Campus |
+|:-------- |:-------- | ----- | ---------------- |
+| Panda | Siumai |To Kill a Mocking Bird|Libe Cafe|
+| Dolphin | Tiramisu | To Live |Upson
+| Sloth |Dumplings |1984|  Mews                |
 
 
 
@@ -171,11 +178,15 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+`print('Hey there!')`
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
+```python
+print('Hey there!')
+print('Hey there!')
+print('Hey there!')
+```
 
 
 
@@ -186,8 +197,7 @@ $$ Re_D = \frac{uD}{\nu} $$
 
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
-<!--- Fill you answer here. --->
-
+$$ a^2 = b^2 + c^2 $$
 
 # Using Python and Running it With Hydrogen in Markdown
 
@@ -222,15 +232,26 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
-
-
+```python
+if x == 10
+  print ('x is 10')
+elif x == 1
+  print ('x is 1')
+else
+  print('x is neither 1 nor 10')
+```
 
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
+```python
+x=0
+for  y in range(20)
+  x=x+y
+print('x is now: ', x)
 
+
+```
 
 
 
@@ -283,7 +304,7 @@ In this section you and your team can practice using Teletype together.
 
 1. Create a portal for your team members to join. Have them write you words of  encouragement in the space below, and be sure they sign their name next to their encouragements.
 
-<!--- Fill you answer here. --->
+Yuhao Du: Nice job! So close to finish it!<!--- Fill you answer here. --->
 
 
 
